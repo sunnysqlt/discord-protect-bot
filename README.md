@@ -7,56 +7,115 @@ Un bot Discord complet et avancé conçu pour protéger votre serveur contre tou
 ### 🛡️ **Systèmes de Protection Principaux**
 
 - **🚨 Anti-Raid** : Détecte et bloque les joins massifs
-- **💥 Anti-Nuke** : Protège contre la suppression de salons/roles
+- **� Anti-Spam** : Bloque les messages répétés
+- **🔗 Anti-Discord Links** : Empêche les liens Discord uniquement
+- **�💥 Anti-Nuke** : Protège contre la suppression de salons
 - **🔨 Anti-Banall** : Empêche les bannissements massifs
 - **🎭 Anti-Role Spam** : Limite la création de rôles
-- **📢 Anti-Spam** : Bloque les messages répétés
-- **🔗 Anti-Discord Links** : Empêche les liens Discord uniquement
+- **📢 Anti-Mass Mention** : Bloque les mentions excessives
+- **� Anti-Caps** : Limite les majuscules
+- **🚫 Anti-Bad Words** : Filtre les mots inappropriés
 
-### 🛡️ **Protections Avancées**
+### 🎨 **Interface Professionnelle**
 
-- **📢 Anti-Everyone** : Bloque les mentions @everyone/@here
-- **🌀 Anti-Zalgo** : Empêche les textes avec caractères zalgo
-- **😀 Anti-Emoji Spam** : Limite le spam d'emojis
-- **👻 Anti-Ghost Ping** : Détecte les mentions supprimées
-- **🖼️ Anti-Image Spam** : Limite le spam d'images/GIFs/stickers
-- **🆕 Anti-New Account** : Surveille les nouveaux comptes (<24h)
-- **🤖 Anti-Selfbot** : Détecte les selfbots et webhooks suspects
+- **Couleur violette** uniforme (#8B008B)
+- **Pas d'emojis superflus**
+- **Messages simples et directs**
+- **Embeds épurés**
 
-### ⚙️ **Commandes Administratives**
+### ⚙️ **Configuration**
 
-- `&lockdown` / `&unlockdown` - Mode confinement
-- `&status` - État complet des protections
-- `&owner` - Informations du propriétaire
-- `&logs create/delete/setup` - Gestion des logs
-- `&banall add/remove/list/clear` - Rôles d'alerte
+- **Préfixe** : `&`
+- **Token** : Via variable d'environnement
+- **Logs** : Salons spécialisés automatiques
+- **Rôles d'alerte** : Configurables par type
 
-### 🔧 **Configuration Individuelle**
+## � Installation
 
-Chaque protection peut être activée/désactivée individuellement :
-- `&antiraid on/off/status`
-- `&antibanall on/off/status`
-- `&antinuke on/off/status`
-- `&antispam on/off/status`
-- `&antilink on/off/status`
-- `&antieveryone on/off/status`
-- `&antizalgo on/off/status`
-- `&antiemoji on/off/status`
-- `&antighostping on/off/status`
-- `&antiimage on/off/status`
-- `&antinewaccount on/off/status`
-- `&antiselfbot on/off/status`
+1. **Clonez le repository** :
+```bash
+git clone https://github.com/sunnysqlt/discord-protect-bot.git
+cd discord-protect-bot
+```
 
-## 📋 Installation
+2. **Installez les dépendances** :
+```bash
+npm install
+```
 
-1. **Installation des dépendances** :
-   ```bash
-   npm install
-   ```
+3. **Configurez le token** :
+- Copiez `.env.example` vers `.env`
+- Mettez votre token Discord dans `TOKEN=`
 
-2. **Configuration du bot** :
-   - Configurez `.env` avec votre token Discord
-   - Modifiez `config.json` selon vos besoins
+4. **Démarrez le bot** :
+```bash
+node bot.js
+```
+
+## 🚀 Hébergement
+
+### **Nexus Hosting (Recommandé)**
+- ✅ Vraiment gratuit 24/7
+- ✅ Pas de timeout
+- ✅ Discord OAuth
+- Voir `hosting-guides/README-NEXUS.md`
+
+### **Replit (Alternative)**
+- ✅ Upload direct
+- ⚠️ Peut s'endormir
+- Voir `hosting-guides/README-REPLIT.md`
+
+## 📋 Commandes
+
+### **Protection du Serveur**
+- `&help` - Affiche l'aide
+- `&status` - État des protections
+- `&lockdown` - Active le confinement
+- `&unlockdown` - Désactive le confinement
+- `&owner` - Informations propriétaire
+
+### **Gestion des Logs**
+- `&logs create` - Crée les salons de logs
+- `&logs delete` - Supprime tous les logs
+- `&logs setup` - Configuration automatique
+
+### **Rôles d'Alerte**
+- `&banall add <type> @role` - Ajoute un rôle d'alerte
+- `&banall remove <type>` - Supprime un rôle d'alerte
+- `&banall list` - Affiche les rôles configurés
+
+### **Configuration des Protections**
+- `&antiraid on/off/status` - Gère l'anti-raid
+- `&antibanall on/off/status` - Gère l'anti-banall
+- `&antinuke on/off/status` - Gère l'anti-nuke
+- `&antispam on/off/status` - Gère l'anti-spam
+- `&antilink on/off/status` - Gère l'anti-link Discord
+
+## 🎯 Utilisation
+
+1. **Créez les logs** : `&logs create`
+2. **Configurez les rôles** : `&banall add raid @Admins`
+3. **Vérifiez l'état** : `&status`
+4. **Testez les protections** : Essayez de spammer
+
+## 📊 Statistiques
+
+- **15 systèmes de protection**
+- **Serveur web intégré** (Express)
+- **Compatible 24/7 gratuit**
+- **Interface violette professionnelle**
+- **0 emojis superflus**
+
+## �️ Technologies
+
+- **Node.js** - Runtime principal
+- **Discord.js v14** - API Discord
+- **Express** - Serveur web pour hébergement
+- **dotenv** - Variables d'environnement
+
+---
+
+**🛡️ Protection Ultime - Votre serveur en sécurité 24/7 !**  - Modifiez `config.json` selon vos besoins
    - Définissez votre `ownerId` dans la configuration
 
 3. **Démarrage** :
@@ -207,3 +266,6 @@ Toutes les configurations sont sauvegardées dans `serverConfig.json` :
 ---
 
 **🛡️ Bot de Protection Ultime v2.0 - Préfixe & - Protection 24/7**
+=======
+# discord-protect-bot
+>>>>>>> 6b12acfbe19cc807f1050765df80e7010bb28628
