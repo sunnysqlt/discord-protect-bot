@@ -1,0 +1,53 @@
+{
+  "example_guild_id": {
+    "antiRaid": {
+      "enabled": true,
+      "enabledBy": "USER_ID",
+      "enabledAt": 1234567890123,
+      "maxJoins": 5,
+      "timeWindow": 60000
+    },
+    "antiBanall": {
+      "enabled": true,
+      "enabledBy": "USER_ID",
+      "enabledAt": 1234567890123,
+      "maxBans": 3,
+      "timeWindow": 30000
+    },
+    "antiNuke": {
+      "enabled": true,
+      "enabledBy": "USER_ID",
+      "enabledAt": 1234567890123,
+      "maxChannelDeletions": 3,
+      "maxRoleDeletions": 5,
+      "timeWindow": 30000
+    },
+    "antiSpam": {
+      "enabled": true,
+      "enabledBy": "USER_ID",
+      "enabledAt": 1234567890123,
+      "maxMessages": 5,
+      "timeWindow": 5000,
+      "punishment": "mute",
+      "muteDuration": 300000
+    },
+    "antiLink": {
+      "enabled": true,
+      "enabledBy": "USER_ID",
+      "enabledAt": 1234567890123,
+      "allowedRoles": [
+        "Admin",
+        "Modérateur"
+      ],
+      "punishment": "delete",
+      "warningMessage": true
+    }
+  },
+  "1472639713591562395": {
+    "antiRaid": {
+      "enabled": false,
+      "disabledBy": "1432452650531815584",
+      "disabledAt": 1774042554538
+    }
+  }
+}
