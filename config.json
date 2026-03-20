@@ -1,0 +1,106 @@
+{
+  "token": "MTQ4NDY1NzY1ODAwNTgxOTY1NA.G8t9nQ.BQRKIhen6o1H_0ltqiDrC2C6118_O0QUeF8Rik",
+  "prefix": "&",
+  "ownerId": "YOUR_USER_ID_HERE",
+  "embedColor": "#7289DA",
+  "protection": {
+    "antiRaid": {
+      "enabled": true,
+      "maxJoinsPerMinute": 5,
+      "punishment": "ban"
+    },
+    "antiSpam": {
+      "enabled": true,
+      "maxMessages": 5,
+      "timeWindow": 5000,
+      "punishment": "mute",
+      "muteDuration": 300000
+    },
+    "antiLink": {
+      "enabled": true,
+      "allowedRoles": ["Admin", "Modérateur"],
+      "punishment": "delete",
+      "description": "Bloque seulement les liens Discord (discord.gg, discord.io, etc.)"
+    },
+    "antiNuke": {
+      "enabled": true,
+      "maxChannelDeletions": 3,
+      "timeWindow": 30000,
+      "punishment": "ban"
+    },
+    "antiBan": {
+      "enabled": true,
+      "maxBans": 3,
+      "timeWindow": 30000,
+      "punishment": "ban"
+    },
+    "antiRole": {
+      "enabled": true,
+      "maxRoleCreations": 5,
+      "timeWindow": 30000,
+      "punishment": "ban"
+    },
+    "antiWebhook": {
+      "enabled": true,
+      "maxWebhooks": 3,
+      "timeWindow": 30000,
+      "punishment": "ban"
+    },
+    "antiMassMention": {
+      "enabled": true,
+      "maxMentions": 5,
+      "timeoutDuration": 300000,
+      "punishment": "mute"
+    },
+    "antiCaps": {
+      "enabled": true,
+      "threshold": 70,
+      "minLength": 10,
+      "punishment": "delete"
+    },
+    "antiBadWords": {
+      "enabled": true,
+      "words": ["pute", "salope", "connard", "enculé", "fdp", "ntm", "batar"],
+      "timeoutDuration": 600000,
+      "punishment": "mute"
+    },
+    "antiEveryone": {
+      "enabled": true,
+      "punishment": "delete"
+    },
+    "antiZalgo": {
+      "enabled": true,
+      "punishment": "delete"
+    },
+    "antiEmojiSpam": {
+      "enabled": true,
+      "maxEmojis": 10,
+      "punishment": "delete"
+    },
+    "antiGhostPing": {
+      "enabled": true,
+      "logGhostPings": true,
+      "punishment": "warn"
+    },
+    "antiImageSpam": {
+      "enabled": true,
+      "maxImages": 3,
+      "timeWindow": 10000,
+      "punishment": "mute"
+    },
+    "antiNewAccount": {
+      "enabled": true,
+      "minAccountAge": 86400000,
+      "action": "monitor"
+    },
+    "antiSelfBot": {
+      "enabled": true,
+      "detectWebhooks": true,
+      "punishment": "ban"
+    },
+    "logs": {
+      "enabled": true,
+      "channel": "protection-logs"
+    }
+  }
+}
